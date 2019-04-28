@@ -1,8 +1,9 @@
 import sys
 
 class Point:
-    def __init__(self, x, y, z, num):
+    def __init__(self, x, y, z, num, normal):
         self.id = num
+        self.normal = normal
         self.pos = (x, y, z)
         self.neighbors = set([])
 
@@ -86,7 +87,7 @@ def genMeshList(pointMap):
                             edges.add(edge2)
                             edges.add(edge3)
                         else:
-                            meshList.append(secondNeighbor)m, 
+                            meshList.append(secondNeighbor)
                             meshList.append(secondNeighbor)
                             meshList.append(second)
                             meshList.append(second)
