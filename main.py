@@ -9,6 +9,7 @@ class Point:
 
 def read_dae(filename):
 	points = []
+	coordMap = {}
 	with open(filename) as file:
 		start = False
 		count = 0
@@ -21,13 +22,15 @@ def read_dae(filename):
 				nums = line.split()
 				if len(nums) != 3:
 					print("help sir this line doesn't have 3 floats :(")
-				points.append(Point(float(nums[0]), float(nums[1]), float(nums[2]), count))
+				newPoint = Point(float(nums[0]), float(nums[1]), float(nums[2]), count)
+				points.append(newPoint)
+				coordMap[(float(nums[0]), float(nums[1]), float(nums[2]))] = newPoint
 				count += 1
 				
 			elif "<float_array" in line and "positions" in line:
 				start = True
 
-	return points
+	return points, coordMap
 
 def createGraph(points, filename):
 	poly_points = []
@@ -159,7 +162,7 @@ if __name__ == '__main__':
 	inputFile = sys.argv[1]
 	outputFile = sys.argv[2]
 
-	pointMap = read_dae(inputFile)
+	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
 	createGraph(pointMap, inputFile)
 	print("Done Create Graph")
