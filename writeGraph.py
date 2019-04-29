@@ -7,14 +7,14 @@ class Point:
 		self.pos = (x, y, z)
 		self.neighbors = set([])
 
-def read_dae(filename, array_name = "Geometry-Mesh-positions-array"):
+def read_dae(filename):
 	points = []
 	with open(filename) as file:
 		start = False
 		count = 0
 		for line in file:
 			if start:
-				if "float_array" in line:
+				if "</float_array" in line:
 					start = False
 					break
 
@@ -24,7 +24,7 @@ def read_dae(filename, array_name = "Geometry-Mesh-positions-array"):
 				points.append(Point(float(nums[0]), float(nums[1]), float(nums[2]), count))
 				count += 1
 				
-			elif "<float_array id=\"{}\"".format(array_name) in line:
+			elif "<float_array" in line and "positions" in line:
 				start = True
 
 	return points
@@ -36,18 +36,13 @@ def createGraph(points, filename):
 		count = 0
 		for line in file:
 			if "<p>" in line:
-				data = line.split()
 
-				poly_points.append(int(data[0][3:]))
+				data = line.replace("<p> ", "").replace("<p>", "").replace("</p>", "").split()
 
-				for i in range(2, len(data), 2):
+				for i in range(0, len(data), 2):
 					poly_points.append(int(data[i]))
 
-  
-	print(len(poly_points) % 3)
-	print(len(points))
 	for i in range(0, len(poly_points), 3):
-		print(poly_points[i:i+3])
 		points[poly_points[i]].neighbors.add(poly_points[i + 1])
 		points[poly_points[i]].neighbors.add(poly_points[i + 2])
 
@@ -64,10 +59,10 @@ def genMeshList(pointMap):
 	firstEdge = (0, random.sample(pointMap[0].neighbors, 1)[0])
 	triangles = set([])
 	edges = set([firstEdge])
+	mistakeEdges = set([])
 	queue = [firstEdge]
 	count = 0
 	while len(queue) > 0:
-		print(count)
 		edge = queue.pop(0)
 		p1 = edge[0]
 		p2 = edge[1]
@@ -82,13 +77,19 @@ def genMeshList(pointMap):
 					break
 
 		if triangle not in triangles:
+			if (p1, p2) in edges:
+				mistakeEdges.add((p1, p2))
+			if (p2, p3) in edges:
+				mistakeEdges.add((p2, p3))
+			if (p3, p1) in edges:
+				mistakeEdges.add((p3, p1))
+		
 			meshList.append(p1)
 			meshList.append(p1)
 			meshList.append(p2)
 			meshList.append(p2)
 			meshList.append(p3)
 			meshList.append(p3)
-
 			edges.add((p1, p2))
 			edges.add((p2, p3))
 			edges.add((p3, p1))
@@ -103,7 +104,36 @@ def genMeshList(pointMap):
 			if (p1, p3) not in edges and (p1, p3) not in queue:
 				queue.append((p1, p3))
 			
-	return meshList, count
+	meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
+	return meshList, count - subCount
+
+def fixMistakes(meshList, triangles, mistakes):
+	badTriangles = set([])
+	for tri in triangles:
+		e1 = (tri[0], tri[1])
+		e2 = (tri[1], tri[2])
+		e3 = (tri[2], tri[0])
+		e1r = (tri[1], tri[0])
+		e2r = (tri[2], tri[1])
+		e3r = (tri[0], tri[2])
+
+		if (e1 in mistakes or e1r in mistakes) and (e2 in mistakes or e2r in mistakes) and (e3 in mistakes or e3r in mistakes):
+			badTriangles.add(tri)
+
+	newMeshList = []
+	count = 0
+	print(len(meshList))
+	for i in range(0, len(meshList), 6):
+		if meshList[i] == meshList[i + 2] or meshList[i + 2] == meshList[i + 4] or meshList[i] == meshList[i + 4]:
+			print('WTF')
+		candTri = tuple(sorted([meshList[i], meshList[i + 2], meshList[i + 4]]))
+		if candTri not in badTriangles:
+			newMeshList.extend(meshList[i:i+6])
+		else:
+			count += 1
+	print(count)
+	print(len(newMeshList))
+	return newMeshList, count
 
 def writeMeshList(meshList, count, inFile, outFile):
 	orig = open(inFile, "r")
@@ -129,7 +159,11 @@ if __name__ == '__main__':
 	inputFile = sys.argv[1]
 	outputFile = sys.argv[2]
 
-	pointMap = read_dae(inputFile, "Geometry-mesh001-positions-array")
+	pointMap = read_dae(inputFile)
+	print("Done Read Dae")
 	createGraph(pointMap, inputFile)
+	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
+	print("Done Gen Mesh List")
 	writeMeshList(meshList, count, inputFile, outputFile)
+	print("Done Write")
