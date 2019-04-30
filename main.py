@@ -1,11 +1,18 @@
 import sys
 import random
+import prims
 
 class Point:
 	def __init__(self, x, y, z, num):
 		self.id = num
 		self.pos = (x, y, z)
 		self.neighbors = set([])
+	def __eq__(self, other):
+		return self.id == other.id
+	def __lt__(self, other):
+		return self.id < other.id
+	def __hash__(self):
+		return hash(self.pos)
 
 def read_dae(filename):
 	points = []
@@ -125,7 +132,7 @@ def fixMistakes(meshList, triangles, mistakes):
 
 	newMeshList = []
 	count = 0
-	print(len(meshList))
+	print("num elems in meshList", len(meshList))
 	for i in range(0, len(meshList), 6):
 		if meshList[i] == meshList[i + 2] or meshList[i + 2] == meshList[i + 4] or meshList[i] == meshList[i + 4]:
 			print('WTF')
@@ -134,8 +141,8 @@ def fixMistakes(meshList, triangles, mistakes):
 			newMeshList.extend(meshList[i:i+6])
 		else:
 			count += 1
-	print(count)
-	print(len(newMeshList))
+	print("num mistakes", count)
+	print("num elems in newMeshList", len(newMeshList))
 	return newMeshList, count
 
 def writeMeshList(meshList, count, inFile, outFile):
@@ -164,6 +171,7 @@ if __name__ == '__main__':
 
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
+	#prims.runPrims(pointMap, coordMap)
 	createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
