@@ -1,6 +1,7 @@
 import sys
 import random
 import prims
+import postprocess
 
 class Point:
 	def __init__(self, x, y, z, num):
@@ -233,6 +234,7 @@ if __name__ == '__main__':
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
 	prims.runPrims(pointMap, coordMap, 4, 8)
+	postprocess.fix_points(pointMap)
 	#createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
