@@ -1,6 +1,6 @@
-/opt/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou
--- The C compiler identification is GNU 8.2.1
--- The CXX compiler identification is GNU 8.2.1
+/opt/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/samz/Documents/School/Graphics/cs184final
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
 -- Detecting C compiler ABI info
@@ -34,7 +34,7 @@ Call Stack (most recent call first):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Found OpenGL: /usr/lib/libOpenGL.so   
--- Found Freetype: /usr/lib/libfreetype.so (found version "2.9.1") 
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.10.0") 
 CMake Deprecation Warning at CGL/deps/glfw/CMakeLists.txt:8 (cmake_policy):
   The OLD behavior for policy CMP0042 will be removed from a future version
   of CMake.
@@ -77,4 +77,4 @@ CMake Deprecation Warning at CGL/deps/glfw/CMakeLists.txt:8 (cmake_policy):
 -- Looking for glXGetProcAddressEXT - not found
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug
+-- Build files have been written to: /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug

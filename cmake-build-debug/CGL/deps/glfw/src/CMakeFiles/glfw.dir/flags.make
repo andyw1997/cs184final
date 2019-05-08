@@ -6,5 +6,5 @@ C_FLAGS = -g -fPIC   -Wall -w
 
 C_DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src -I/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src 
+C_INCLUDES = -I/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src -I/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src 
 

@@ -48,10 +48,10 @@ RM = /opt/clion/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou
+CMAKE_SOURCE_DIR = /home/samz/Documents/School/Graphics/cs184final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug
+CMAKE_BINARY_DIR = /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/src/CMakeFiles/progress.marks
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles 0
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/src/CMakeFiles/progress.marks
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/meshedit.dir/rule:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/meshedit.dir/rule
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/meshedit.dir/rule
 .PHONY : src/CMakeFiles/meshedit.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ meshedit: src/CMakeFiles/meshedit.dir/rule
 
 # fast build rule for target.
 meshedit/fast:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/build
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/build
 .PHONY : meshedit/fast
 
 bezierCurve.o: bezierCurve.cpp.o
@@ -177,7 +177,7 @@ bezierCurve.o: bezierCurve.cpp.o
 
 # target to build an object file
 bezierCurve.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierCurve.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierCurve.cpp.o
 .PHONY : bezierCurve.cpp.o
 
 bezierCurve.i: bezierCurve.cpp.i
@@ -186,7 +186,7 @@ bezierCurve.i: bezierCurve.cpp.i
 
 # target to preprocess a source file
 bezierCurve.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierCurve.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierCurve.cpp.i
 .PHONY : bezierCurve.cpp.i
 
 bezierCurve.s: bezierCurve.cpp.s
@@ -195,7 +195,7 @@ bezierCurve.s: bezierCurve.cpp.s
 
 # target to generate assembly for a file
 bezierCurve.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierCurve.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierCurve.cpp.s
 .PHONY : bezierCurve.cpp.s
 
 bezierPatch.o: bezierPatch.cpp.o
@@ -204,7 +204,7 @@ bezierPatch.o: bezierPatch.cpp.o
 
 # target to build an object file
 bezierPatch.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierPatch.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierPatch.cpp.o
 .PHONY : bezierPatch.cpp.o
 
 bezierPatch.i: bezierPatch.cpp.i
@@ -213,7 +213,7 @@ bezierPatch.i: bezierPatch.cpp.i
 
 # target to preprocess a source file
 bezierPatch.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierPatch.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierPatch.cpp.i
 .PHONY : bezierPatch.cpp.i
 
 bezierPatch.s: bezierPatch.cpp.s
@@ -222,7 +222,7 @@ bezierPatch.s: bezierPatch.cpp.s
 
 # target to generate assembly for a file
 bezierPatch.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierPatch.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/bezierPatch.cpp.s
 .PHONY : bezierPatch.cpp.s
 
 camera.o: camera.cpp.o
@@ -231,7 +231,7 @@ camera.o: camera.cpp.o
 
 # target to build an object file
 camera.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/camera.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/camera.cpp.o
 .PHONY : camera.cpp.o
 
 camera.i: camera.cpp.i
@@ -240,7 +240,7 @@ camera.i: camera.cpp.i
 
 # target to preprocess a source file
 camera.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/camera.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/camera.cpp.i
 .PHONY : camera.cpp.i
 
 camera.s: camera.cpp.s
@@ -249,7 +249,7 @@ camera.s: camera.cpp.s
 
 # target to generate assembly for a file
 camera.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/camera.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
 collada.o: collada.cpp.o
@@ -258,7 +258,7 @@ collada.o: collada.cpp.o
 
 # target to build an object file
 collada.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/collada.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/collada.cpp.o
 .PHONY : collada.cpp.o
 
 collada.i: collada.cpp.i
@@ -267,7 +267,7 @@ collada.i: collada.cpp.i
 
 # target to preprocess a source file
 collada.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/collada.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/collada.cpp.i
 .PHONY : collada.cpp.i
 
 collada.s: collada.cpp.s
@@ -276,7 +276,7 @@ collada.s: collada.cpp.s
 
 # target to generate assembly for a file
 collada.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/collada.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/collada.cpp.s
 .PHONY : collada.cpp.s
 
 halfEdgeMesh.o: halfEdgeMesh.cpp.o
@@ -285,7 +285,7 @@ halfEdgeMesh.o: halfEdgeMesh.cpp.o
 
 # target to build an object file
 halfEdgeMesh.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/halfEdgeMesh.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/halfEdgeMesh.cpp.o
 .PHONY : halfEdgeMesh.cpp.o
 
 halfEdgeMesh.i: halfEdgeMesh.cpp.i
@@ -294,7 +294,7 @@ halfEdgeMesh.i: halfEdgeMesh.cpp.i
 
 # target to preprocess a source file
 halfEdgeMesh.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/halfEdgeMesh.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/halfEdgeMesh.cpp.i
 .PHONY : halfEdgeMesh.cpp.i
 
 halfEdgeMesh.s: halfEdgeMesh.cpp.s
@@ -303,7 +303,7 @@ halfEdgeMesh.s: halfEdgeMesh.cpp.s
 
 # target to generate assembly for a file
 halfEdgeMesh.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/halfEdgeMesh.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/halfEdgeMesh.cpp.s
 .PHONY : halfEdgeMesh.cpp.s
 
 light.o: light.cpp.o
@@ -312,7 +312,7 @@ light.o: light.cpp.o
 
 # target to build an object file
 light.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/light.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/light.cpp.o
 .PHONY : light.cpp.o
 
 light.i: light.cpp.i
@@ -321,7 +321,7 @@ light.i: light.cpp.i
 
 # target to preprocess a source file
 light.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/light.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/light.cpp.i
 .PHONY : light.cpp.i
 
 light.s: light.cpp.s
@@ -330,7 +330,7 @@ light.s: light.cpp.s
 
 # target to generate assembly for a file
 light.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/light.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/light.cpp.s
 .PHONY : light.cpp.s
 
 main.o: main.cpp.o
@@ -339,7 +339,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/main.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -348,7 +348,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/main.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -357,7 +357,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/main.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 material.o: material.cpp.o
@@ -366,7 +366,7 @@ material.o: material.cpp.o
 
 # target to build an object file
 material.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/material.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/material.cpp.o
 .PHONY : material.cpp.o
 
 material.i: material.cpp.i
@@ -375,7 +375,7 @@ material.i: material.cpp.i
 
 # target to preprocess a source file
 material.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/material.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/material.cpp.i
 .PHONY : material.cpp.i
 
 material.s: material.cpp.s
@@ -384,7 +384,7 @@ material.s: material.cpp.s
 
 # target to generate assembly for a file
 material.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/material.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/material.cpp.s
 .PHONY : material.cpp.s
 
 mesh.o: mesh.cpp.o
@@ -393,7 +393,7 @@ mesh.o: mesh.cpp.o
 
 # target to build an object file
 mesh.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/mesh.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/mesh.cpp.o
 .PHONY : mesh.cpp.o
 
 mesh.i: mesh.cpp.i
@@ -402,7 +402,7 @@ mesh.i: mesh.cpp.i
 
 # target to preprocess a source file
 mesh.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/mesh.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/mesh.cpp.i
 .PHONY : mesh.cpp.i
 
 mesh.s: mesh.cpp.s
@@ -411,7 +411,7 @@ mesh.s: mesh.cpp.s
 
 # target to generate assembly for a file
 mesh.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/mesh.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/mesh.cpp.s
 .PHONY : mesh.cpp.s
 
 meshEdit.o: meshEdit.cpp.o
@@ -420,7 +420,7 @@ meshEdit.o: meshEdit.cpp.o
 
 # target to build an object file
 meshEdit.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/meshEdit.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/meshEdit.cpp.o
 .PHONY : meshEdit.cpp.o
 
 meshEdit.i: meshEdit.cpp.i
@@ -429,7 +429,7 @@ meshEdit.i: meshEdit.cpp.i
 
 # target to preprocess a source file
 meshEdit.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/meshEdit.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/meshEdit.cpp.i
 .PHONY : meshEdit.cpp.i
 
 meshEdit.s: meshEdit.cpp.s
@@ -438,7 +438,7 @@ meshEdit.s: meshEdit.cpp.s
 
 # target to generate assembly for a file
 meshEdit.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/meshEdit.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/meshEdit.cpp.s
 .PHONY : meshEdit.cpp.s
 
 png.o: png.cpp.o
@@ -447,7 +447,7 @@ png.o: png.cpp.o
 
 # target to build an object file
 png.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/png.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/png.cpp.o
 .PHONY : png.cpp.o
 
 png.i: png.cpp.i
@@ -456,7 +456,7 @@ png.i: png.cpp.i
 
 # target to preprocess a source file
 png.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/png.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/png.cpp.i
 .PHONY : png.cpp.i
 
 png.s: png.cpp.s
@@ -465,7 +465,7 @@ png.s: png.cpp.s
 
 # target to generate assembly for a file
 png.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/png.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/png.cpp.s
 .PHONY : png.cpp.s
 
 scene.o: scene.cpp.o
@@ -474,7 +474,7 @@ scene.o: scene.cpp.o
 
 # target to build an object file
 scene.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/scene.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/scene.cpp.o
 .PHONY : scene.cpp.o
 
 scene.i: scene.cpp.i
@@ -483,7 +483,7 @@ scene.i: scene.cpp.i
 
 # target to preprocess a source file
 scene.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/scene.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/scene.cpp.i
 .PHONY : scene.cpp.i
 
 scene.s: scene.cpp.s
@@ -492,7 +492,7 @@ scene.s: scene.cpp.s
 
 # target to generate assembly for a file
 scene.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/scene.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/scene.cpp.s
 .PHONY : scene.cpp.s
 
 student_code.o: student_code.cpp.o
@@ -501,7 +501,7 @@ student_code.o: student_code.cpp.o
 
 # target to build an object file
 student_code.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/student_code.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/student_code.cpp.o
 .PHONY : student_code.cpp.o
 
 student_code.i: student_code.cpp.i
@@ -510,7 +510,7 @@ student_code.i: student_code.cpp.i
 
 # target to preprocess a source file
 student_code.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/student_code.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/student_code.cpp.i
 .PHONY : student_code.cpp.i
 
 student_code.s: student_code.cpp.s
@@ -519,7 +519,7 @@ student_code.s: student_code.cpp.s
 
 # target to generate assembly for a file
 student_code.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/student_code.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/student_code.cpp.s
 .PHONY : student_code.cpp.s
 
 texture.o: texture.cpp.o
@@ -528,7 +528,7 @@ texture.o: texture.cpp.o
 
 # target to build an object file
 texture.cpp.o:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/texture.cpp.o
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/texture.cpp.o
 .PHONY : texture.cpp.o
 
 texture.i: texture.cpp.i
@@ -537,7 +537,7 @@ texture.i: texture.cpp.i
 
 # target to preprocess a source file
 texture.cpp.i:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/texture.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/texture.cpp.i
 .PHONY : texture.cpp.i
 
 texture.s: texture.cpp.s
@@ -546,7 +546,7 @@ texture.s: texture.cpp.s
 
 # target to generate assembly for a file
 texture.cpp.s:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/texture.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(MAKE) -f src/CMakeFiles/meshedit.dir/build.make src/CMakeFiles/meshedit.dir/texture.cpp.s
 .PHONY : texture.cpp.s
 
 # Help Target
@@ -615,6 +615,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

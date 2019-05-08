@@ -4,19 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/context.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/context.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/glx_context.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/init.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/init.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/input.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/input.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/linux_joystick.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/monitor.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/posix_time.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/posix_tls.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/window.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/window.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/x11_init.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/x11_monitor.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/x11_window.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/xkb_unicode.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/context.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/glx_context.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/init.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/input.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/linux_joystick.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/monitor.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/posix_time.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/posix_tls.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/window.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/x11_init.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/x11_monitor.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/x11_window.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/xkb_unicode.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

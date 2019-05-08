@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=gnu++11 -m64 -Wconversion -O3 -fopenmp -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/include -I/usr/include/freetype2 
+CXX_INCLUDES = -I/home/samz/Documents/School/Graphics/cs184final/CGL/include -I/usr/include/freetype2 
 

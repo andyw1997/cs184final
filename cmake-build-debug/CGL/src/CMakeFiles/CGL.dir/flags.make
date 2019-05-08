@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=gnu++11 -m64 -Wconversion -O3 -fopenmp -std=gnu++0x -m64 -lXi 
 
 CXX_DEFINES = -DGLEW_STATIC
 
-CXX_INCLUDES = -I/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/include -I/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glew/include -I/usr/include/freetype2 -I/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src 
+CXX_INCLUDES = -I/home/samz/Documents/School/Graphics/cs184final/CGL/include -I/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glew/include -I/usr/include/freetype2 -I/home/samz/Documents/School/Graphics/cs184final/CGL/src 
 

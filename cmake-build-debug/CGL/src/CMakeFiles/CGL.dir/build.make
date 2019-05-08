@@ -43,10 +43,10 @@ RM = /opt/clion/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou
+CMAKE_SOURCE_DIR = /home/samz/Documents/School/Graphics/cs184final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug
+CMAKE_BINARY_DIR = /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CGL/src/CMakeFiles/CGL.dir/depend.make
@@ -59,172 +59,172 @@ include CGL/src/CMakeFiles/CGL.dir/flags.make
 
 CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o: ../CGL/src/vector2D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/vector2D.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/vector2D.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector2D.cpp
 
 CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/vector2D.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector2D.cpp > CMakeFiles/CGL.dir/vector2D.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector2D.cpp > CMakeFiles/CGL.dir/vector2D.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/vector2D.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector2D.cpp -o CMakeFiles/CGL.dir/vector2D.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector2D.cpp -o CMakeFiles/CGL.dir/vector2D.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o: ../CGL/src/vector3D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/vector3D.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/vector3D.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector3D.cpp
 
 CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/vector3D.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector3D.cpp > CMakeFiles/CGL.dir/vector3D.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector3D.cpp > CMakeFiles/CGL.dir/vector3D.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/vector3D.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector3D.cpp -o CMakeFiles/CGL.dir/vector3D.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector3D.cpp -o CMakeFiles/CGL.dir/vector3D.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o: ../CGL/src/vector4D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/vector4D.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector4D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/vector4D.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector4D.cpp
 
 CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/vector4D.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector4D.cpp > CMakeFiles/CGL.dir/vector4D.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector4D.cpp > CMakeFiles/CGL.dir/vector4D.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/vector4D.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector4D.cpp -o CMakeFiles/CGL.dir/vector4D.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/vector4D.cpp -o CMakeFiles/CGL.dir/vector4D.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o: ../CGL/src/matrix3x3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/matrix3x3.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix3x3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/matrix3x3.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix3x3.cpp
 
 CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/matrix3x3.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix3x3.cpp > CMakeFiles/CGL.dir/matrix3x3.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix3x3.cpp > CMakeFiles/CGL.dir/matrix3x3.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/matrix3x3.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix3x3.cpp -o CMakeFiles/CGL.dir/matrix3x3.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix3x3.cpp -o CMakeFiles/CGL.dir/matrix3x3.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o: ../CGL/src/matrix4x4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/matrix4x4.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix4x4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/matrix4x4.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix4x4.cpp
 
 CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/matrix4x4.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix4x4.cpp > CMakeFiles/CGL.dir/matrix4x4.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix4x4.cpp > CMakeFiles/CGL.dir/matrix4x4.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/matrix4x4.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix4x4.cpp -o CMakeFiles/CGL.dir/matrix4x4.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix4x4.cpp -o CMakeFiles/CGL.dir/matrix4x4.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o: ../CGL/src/quaternion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/quaternion.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/quaternion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/quaternion.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/quaternion.cpp
 
 CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/quaternion.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/quaternion.cpp > CMakeFiles/CGL.dir/quaternion.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/quaternion.cpp > CMakeFiles/CGL.dir/quaternion.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/quaternion.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/quaternion.cpp -o CMakeFiles/CGL.dir/quaternion.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/quaternion.cpp -o CMakeFiles/CGL.dir/quaternion.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/complex.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/complex.cpp.o: ../CGL/src/complex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CGL/src/CMakeFiles/CGL.dir/complex.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/complex.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/complex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CGL/src/CMakeFiles/CGL.dir/complex.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/complex.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/complex.cpp
 
 CGL/src/CMakeFiles/CGL.dir/complex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/complex.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/complex.cpp > CMakeFiles/CGL.dir/complex.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/complex.cpp > CMakeFiles/CGL.dir/complex.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/complex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/complex.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/complex.cpp -o CMakeFiles/CGL.dir/complex.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/complex.cpp -o CMakeFiles/CGL.dir/complex.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/color.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/color.cpp.o: ../CGL/src/color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CGL/src/CMakeFiles/CGL.dir/color.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/color.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CGL/src/CMakeFiles/CGL.dir/color.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/color.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/color.cpp
 
 CGL/src/CMakeFiles/CGL.dir/color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/color.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/color.cpp > CMakeFiles/CGL.dir/color.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/color.cpp > CMakeFiles/CGL.dir/color.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/color.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/color.cpp -o CMakeFiles/CGL.dir/color.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/color.cpp -o CMakeFiles/CGL.dir/color.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o: ../CGL/src/osdtext.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/osdtext.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdtext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/osdtext.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/osdtext.cpp
 
 CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/osdtext.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdtext.cpp > CMakeFiles/CGL.dir/osdtext.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/osdtext.cpp > CMakeFiles/CGL.dir/osdtext.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/osdtext.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdtext.cpp -o CMakeFiles/CGL.dir/osdtext.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/osdtext.cpp -o CMakeFiles/CGL.dir/osdtext.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/osdfont.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/osdfont.cpp.o: ../CGL/src/osdfont.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CGL/src/CMakeFiles/CGL.dir/osdfont.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/osdfont.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdfont.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CGL/src/CMakeFiles/CGL.dir/osdfont.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/osdfont.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/osdfont.cpp
 
 CGL/src/CMakeFiles/CGL.dir/osdfont.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/osdfont.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdfont.cpp > CMakeFiles/CGL.dir/osdfont.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/osdfont.cpp > CMakeFiles/CGL.dir/osdfont.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/osdfont.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/osdfont.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdfont.cpp -o CMakeFiles/CGL.dir/osdfont.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/osdfont.cpp -o CMakeFiles/CGL.dir/osdfont.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o: ../CGL/src/viewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/viewer.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/viewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/viewer.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/viewer.cpp
 
 CGL/src/CMakeFiles/CGL.dir/viewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/viewer.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/viewer.cpp > CMakeFiles/CGL.dir/viewer.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/viewer.cpp > CMakeFiles/CGL.dir/viewer.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/viewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/viewer.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/viewer.cpp -o CMakeFiles/CGL.dir/viewer.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/viewer.cpp -o CMakeFiles/CGL.dir/viewer.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/base64.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/base64.cpp.o: ../CGL/src/base64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CGL/src/CMakeFiles/CGL.dir/base64.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/base64.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/base64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CGL/src/CMakeFiles/CGL.dir/base64.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/base64.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/base64.cpp
 
 CGL/src/CMakeFiles/CGL.dir/base64.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/base64.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/base64.cpp > CMakeFiles/CGL.dir/base64.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/base64.cpp > CMakeFiles/CGL.dir/base64.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/base64.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/base64.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/base64.cpp -o CMakeFiles/CGL.dir/base64.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/base64.cpp -o CMakeFiles/CGL.dir/base64.cpp.s
 
 CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o: ../CGL/src/tinyxml2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/tinyxml2.cpp.o -c /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/tinyxml2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/tinyxml2.cpp.o -c /home/samz/Documents/School/Graphics/cs184final/CGL/src/tinyxml2.cpp
 
 CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/tinyxml2.cpp.i"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/tinyxml2.cpp > CMakeFiles/CGL.dir/tinyxml2.cpp.i
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samz/Documents/School/Graphics/cs184final/CGL/src/tinyxml2.cpp > CMakeFiles/CGL.dir/tinyxml2.cpp.i
 
 CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/tinyxml2.cpp.s"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/tinyxml2.cpp -o CMakeFiles/CGL.dir/tinyxml2.cpp.s
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samz/Documents/School/Graphics/cs184final/CGL/src/tinyxml2.cpp -o CMakeFiles/CGL.dir/tinyxml2.cpp.s
 
 # Object files for target CGL
 CGL_OBJECTS = \
@@ -260,9 +260,9 @@ CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/base64.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/build.make
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libCGL.a"
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && $(CMAKE_COMMAND) -P CMakeFiles/CGL.dir/cmake_clean_target.cmake
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CGL.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libCGL.a"
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && $(CMAKE_COMMAND) -P CMakeFiles/CGL.dir/cmake_clean_target.cmake
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 CGL/src/CMakeFiles/CGL.dir/build: CGL/src/libCGL.a
@@ -270,10 +270,10 @@ CGL/src/CMakeFiles/CGL.dir/build: CGL/src/libCGL.a
 .PHONY : CGL/src/CMakeFiles/CGL.dir/build
 
 CGL/src/CMakeFiles/CGL.dir/clean:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src && $(CMAKE_COMMAND) -P CMakeFiles/CGL.dir/cmake_clean.cmake
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src && $(CMAKE_COMMAND) -P CMakeFiles/CGL.dir/cmake_clean.cmake
 .PHONY : CGL/src/CMakeFiles/CGL.dir/clean
 
 CGL/src/CMakeFiles/CGL.dir/depend:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samz/Documents/School/Graphics/cs184final /home/samz/Documents/School/Graphics/cs184final/CGL/src /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CGL/src/CMakeFiles/CGL.dir/depend
 

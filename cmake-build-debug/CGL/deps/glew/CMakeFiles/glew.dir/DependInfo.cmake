@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glew/src/glew.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/src/glew.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glew/src/glewinfo.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glew/src/visualinfo.c" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glew/src/glew.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/src/glew.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glew/src/glewinfo.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glew/src/visualinfo.c" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

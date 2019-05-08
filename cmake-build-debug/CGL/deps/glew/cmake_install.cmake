@@ -1,4 +1,4 @@
-# Install script for directory: /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glew
+# Install script for directory: /home/samz/Documents/School/Graphics/cs184final/CGL/deps/glew
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,10 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glew/libglew.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glew/libglew.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glew/include/GL")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glew/include/GL")
 endif()
 

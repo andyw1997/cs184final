@@ -43,10 +43,10 @@ RM = /opt/clion/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou
+CMAKE_SOURCE_DIR = /home/samz/Documents/School/Graphics/cs184final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug
+CMAKE_BINARY_DIR = /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmak
 include CGL/deps/glfw/CMakeFiles/uninstall.dir/progress.make
 
 CGL/deps/glfw/CMakeFiles/uninstall:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw && /opt/clion/bin/cmake/linux/bin/cmake -P /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/cmake_uninstall.cmake
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw && /opt/clion/bin/cmake/linux/bin/cmake -P /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/cmake_uninstall.cmake
 
 uninstall: CGL/deps/glfw/CMakeFiles/uninstall
 uninstall: CGL/deps/glfw/CMakeFiles/uninstall.dir/build.make
@@ -67,10 +67,10 @@ CGL/deps/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : CGL/deps/glfw/CMakeFiles/uninstall.dir/build
 
 CGL/deps/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : CGL/deps/glfw/CMakeFiles/uninstall.dir/clean
 
 CGL/deps/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samz/Documents/School/Graphics/cs184final /home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw /home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CGL/deps/glfw/CMakeFiles/uninstall.dir/depend
 

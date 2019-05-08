@@ -1,8 +1,8 @@
-# Install script for directory: /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL
+# Install script for directory: /home/samz/Documents/School/Graphics/cs184final/CGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL")
+  set(CMAKE_INSTALL_PREFIX "/home/samz/Documents/School/Graphics/cs184final/CGL")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glew/cmake_install.cmake")
-  include("/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/cmake_install.cmake")
-  include("/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/cmake_install.cmake")
+  include("/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glew/cmake_install.cmake")
+  include("/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/cmake_install.cmake")
+  include("/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/cmake_install.cmake")
 
 endif()
 

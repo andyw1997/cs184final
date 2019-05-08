@@ -127,12 +127,20 @@ def fixMistakes(meshList, triangles, mistakes):
 		e2r = (tri[2], tri[1])
 		e3r = (tri[0], tri[2])
 
-		if (e1 in mistakes or e1r in mistakes) and (e2 in mistakes or e2r in mistakes) and (e3 in mistakes or e3r in mistakes):
+		badCount = 0
+		if (e1 in mistakes or e1r in mistakes):
+			badCount +=1
+		if (e2 in mistakes or e2r in mistakes):
+			badCount +=1
+		if (e3 in mistakes or e3r in mistakes):
+			badCount +=1
+		
+		if badCount > 2:
 			badTriangles.add(tri)
 
 	newMeshList = []
 	count = 0
-	print("num elems in meshList", len(meshList))
+	print("num elems in meshList", len(meshList) / 6)
 	for i in range(0, len(meshList), 6):
 		if meshList[i] == meshList[i + 2] or meshList[i + 2] == meshList[i + 4] or meshList[i] == meshList[i + 4]:
 			print('WTF')
@@ -142,7 +150,7 @@ def fixMistakes(meshList, triangles, mistakes):
 		else:
 			count += 1
 	print("num mistakes", count)
-	print("num elems in newMeshList", len(newMeshList))
+	print("num elems in newMeshList", len(newMeshList) / 6)
 	return newMeshList, count
 
 def writeMeshList(meshList, count, inFile, outFile):
@@ -165,16 +173,70 @@ def writeMeshList(meshList, count, inFile, outFile):
 		else:
 			mod.write(line)
 
+def checkManifolds(meshList):
+	edges = {}
+	singleManifold = 0
+	doubleManifold = 0
+	tripleManifold = 0
+	for i in range(0, len(meshList), 6):
+		e1 = (min(meshList[i], meshList[i+2]), max(meshList[i], meshList[i+2]))
+		e2 = (min(meshList[i], meshList[i+4]), max(meshList[i], meshList[i+4]))
+		e3 = (min(meshList[i+4], meshList[i+2]), max(meshList[i+4], meshList[i+2]))
+
+		if e1 in edges.keys():
+			edges[e1] += 1
+		else:
+			edges[e1] = 1
+
+		if e2 in edges.keys():
+			edges[e2] += 1
+		else:
+			edges[e2] = 1
+
+		if e3 in edges.keys():
+			edges[e3] += 1
+		else:
+			edges[e3] = 1
+
+	for i in range(0, len(meshList), 6):
+		e1 = (min(meshList[i], meshList[i+2]), max(meshList[i], meshList[i+2]))
+		e2 = (min(meshList[i], meshList[i+4]), max(meshList[i], meshList[i+4]))
+		e3 = (min(meshList[i+4], meshList[i+2]), max(meshList[i+4], meshList[i+2]))
+		badEdges = 0
+		if edges[e1] > 2:
+			badEdges += 1
+		if edges[e2] > 2:
+			badEdges += 1
+		if edges[e3] > 2:
+			badEdges += 1
+
+		if badEdges == 1:
+			singleManifold += 1
+		if badEdges == 2:
+			doubleManifold +=1
+		if badEdges == 3:
+			tripleManifold +=1
+
+	print("single", singleManifold)
+	print("double", doubleManifold)
+	print("triple", tripleManifold)
+	count = 0
+	for edge in edges.keys():
+		if edges[edge] > 2:
+			count+=1
+	print(count)
+
 if __name__ == '__main__':
 	inputFile = sys.argv[1]
 	outputFile = sys.argv[2]
 
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
-	#prims.runPrims(pointMap, coordMap)
-	createGraph(pointMap, inputFile)
+	prims.runPrims(pointMap, coordMap, 4, 8)
+	#createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
 	print("Done Gen Mesh List")
+	checkManifolds(meshList)
 	writeMeshList(meshList, count, inputFile, outputFile)
 	print("Done Write")

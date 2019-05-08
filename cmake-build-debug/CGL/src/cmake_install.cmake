@@ -1,4 +1,4 @@
-# Install script for directory: /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src
+# Install script for directory: /home/samz/Documents/School/Graphics/cs184final/CGL/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/libCGL.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/libCGL.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/CGL" TYPE FILE FILES
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/CGL.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector2D.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector3D.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector4D.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix3x3.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix4x4.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/quaternion.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/complex.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/color.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdtext.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/viewer.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/base64.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/tinyxml2.h"
-    "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/renderer.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/CGL.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/vector2D.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/vector3D.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/vector4D.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix3x3.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix4x4.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/quaternion.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/complex.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/color.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/osdtext.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/viewer.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/base64.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/tinyxml2.h"
+    "/home/samz/Documents/School/Graphics/cs184final/CGL/src/renderer.h"
     )
 endif()
 

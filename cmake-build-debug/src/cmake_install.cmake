@@ -1,4 +1,4 @@
-# Install script for directory: /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/src
+# Install script for directory: /home/samz/Documents/School/Graphics/cs184final/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/meshedit" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/meshedit")
+  if(EXISTS "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/cs184final/meshedit" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/cs184final/meshedit")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/meshedit"
+         FILE "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/cs184final/meshedit"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/meshedit")
+   "/home/samz/Documents/School/Graphics/cs184final/meshedit")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou" TYPE EXECUTABLE FILES "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/meshedit")
-  if(EXISTS "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/meshedit" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/meshedit")
+file(INSTALL DESTINATION "/home/samz/Documents/School/Graphics/cs184final" TYPE EXECUTABLE FILES "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/meshedit")
+  if(EXISTS "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/cs184final/meshedit" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/cs184final/meshedit")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/meshedit")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/samz/Documents/School/Graphics/cs184final/meshedit")
     endif()
   endif()
 endif()

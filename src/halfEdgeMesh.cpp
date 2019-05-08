@@ -92,7 +92,7 @@ namespace CGL {
           // on the input will help simplify code further downstream, since it can be certain
           // it doesn't have to check for these rather degenerate cases.)
           cerr << "Error converting polygons to halfedge mesh: each polygon must have at least three vertices." << endl;
-          exit( 1 );
+          //exit( 1 );
         }
 
         // We want to count the number of distinct vertex indices in this
@@ -133,7 +133,7 @@ namespace CGL {
             cerr << " " << *i;
           }
           cerr << ")" << endl;
-          exit( 1 );
+          //exit( 1 );
         } // end check that polygon vertices are distinct
 
       } // end basic sanity checks on input
@@ -176,7 +176,7 @@ namespace CGL {
             cerr << "This means that either (i) more than two faces contain this edge (hence the surface is nonmanifold), or" << endl;
             cerr << "(ii) there are exactly two faces containing this edge, but they have the same orientation (hence the surface is" << endl;
             cerr << "not consistently oriented." << endl;
-            exit( 1 );
+            //exit( 1 );
           }
           else // otherwise, the halfedge hasn't been allocated yet
           {
@@ -343,7 +343,7 @@ namespace CGL {
         if( v->halfedge() == halfedges.end() )
         {
           cerr << "Error converting polygons to halfedge mesh: some vertices are not referenced by any polygon." << endl;
-          exit( 1 );
+          //exit( 1 );
         }
 
         // Next, check that the number of halfedges emanating from this vertex in our half
@@ -365,7 +365,7 @@ namespace CGL {
         if( count != vertexDegree[v] )
         {
           cerr << "Error converting polygons to halfedge mesh: at least one of the vertices is nonmanifold." << endl;
-          exit( 1 );
+          //exit( 1 );
         }
       } // end loop over vertices
 
@@ -376,7 +376,7 @@ namespace CGL {
         cerr << "Error converting polygons to halfedge mesh: number of vertex positions is different from the number of distinct vertices!" << endl;
         cerr << "(number of positions in input: " << vertexPositions.size() << ")" << endl;
         cerr << "(  number of vertices in mesh: " << vertices.size() << ")" << endl;
-        exit( 1 );
+        //exit( 1 );
       }
       // Since an STL map internally sorts its keys, we can iterate over the map from vertex indices to
       // vertex iterators to visit our (input) vertices in lexicographic order

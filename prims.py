@@ -2,7 +2,7 @@ import numpy as np
 import heapq as pq
 from scipy.spatial import KDTree
 
-def runPrims(points, coords):
+def runPrims(points, coords, countLim, nearestLim):
 	allCoords = list(coords.keys())
 	tree = KDTree(allCoords)
 	queue = []
@@ -10,30 +10,34 @@ def runPrims(points, coords):
 	inMST = set([])
 	seedQueue(queue, tree, points, coords, inMST, inQueue, allCoords)
 	
-	count = 0
+	edges = 0
 	while len(queue) > 0:
-		count+=1
+		
 		v = pq.heappop(queue)[1]
 		if v in inMST:
 			continue
-		distances, ndx = tree.query(v.pos, k=10)
+
+		distances, ndx = tree.query(v.pos, k=nearestLim)
+		count = 0
 		for i in range(1, len(ndx)):
 			pos = ndx[i]
 			if pos >= len(allCoords):
 				continue
 			dist = distances[i]
 			point = coords[tuple(allCoords[pos])]
-			if point in inMST:
+			if point in inMST and count < countLim:
+				count+=1
+				edges+=1
 				point.neighbors.add(v.id)
 				v.neighbors.add(point.id)
 			else:
 				pq.heappush(queue, (dist, point))
 		inMST.add(v)
-	print(count)
+	print(edges)
 	
 def seedQueue(queue, tree, points, coords, inMST, inQueue, allCoords):
 	first = points[0]
-	distances, ndx = tree.query(first.pos, k=10)
+	distances, ndx = tree.query(first.pos, k=7)
 	second = coords[allCoords[ndx[1]]]
 	third = coords[allCoords[ndx[2]]]
 

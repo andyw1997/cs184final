@@ -1,8 +1,8 @@
-# Install script for directory: /home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou
+# Install script for directory: /home/samz/Documents/School/Graphics/cs184final
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/")
+  set(CMAKE_INSTALL_PREFIX "/home/samz/Documents/School/Graphics/cs184final/")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/cmake_install.cmake")
-  include("/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/src/cmake_install.cmake")
+  include("/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/cmake_install.cmake")
+  include("/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/src/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

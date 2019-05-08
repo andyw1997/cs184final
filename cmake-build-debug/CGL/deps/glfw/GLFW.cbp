@@ -8,178 +8,178 @@
 		<Option virtualFolders="CMake Files\;CMake Files\CGL\;CMake Files\CGL\deps\;CMake Files\CGL\deps\glew\;CMake Files\CGL\deps\glfw\;CMake Files\CGL\deps\glfw\src\;CMake Files\CGL\src\;CMake Files\src\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw"/>
+				<Option working_dir="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="uninstall">
-				<Option working_dir="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw"/>
+				<Option working_dir="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 uninstall"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw">
-				<Option output="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src"/>
+				<Option output="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add directory="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src"/>
-					<Add directory="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src"/>
+					<Add directory="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw/fast">
-				<Option output="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src"/>
+				<Option output="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add directory="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src"/>
-					<Add directory="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src"/>
+					<Add directory="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/include/GLFW/glfw3.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/include/GLFW/glfw3native.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/include/GLFW/glfw3native.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/context.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/glx_context.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/glx_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/glx_context.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/glx_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/init.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/input.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/input.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/internal.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/internal.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/linux_joystick.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/linux_joystick.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/linux_joystick.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/linux_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/monitor.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/posix_time.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/posix_time.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/posix_time.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/posix_time.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/posix_tls.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/posix_tls.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/posix_tls.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/posix_tls.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/window.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/x11_init.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/x11_init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/x11_monitor.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/x11_monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/x11_platform.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/x11_platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/x11_window.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/x11_window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/xkb_unicode.c">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/xkb_unicode.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/xkb_unicode.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/xkb_unicode.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glfw/src/glfw_config.h">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glfw/src/glfw_config.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CMakeLists.txt">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/CMakeLists.txt">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CGL\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glew/CMakeLists.txt">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glew/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CGL\deps\glew\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/CMakeLists.txt">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CGL\deps\glfw\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/cmake_uninstall.cmake.in">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/cmake_uninstall.cmake.in">
 			<Option virtualFolder="CMake Files\CGL\deps\glfw\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/CMakeLists.txt">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CGL\deps\glfw\src\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/glfw3.pc.in">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/glfw3.pc.in">
 			<Option virtualFolder="CMake Files\CGL\deps\glfw\src\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/glfw3Config.cmake.in">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/glfw3Config.cmake.in">
 			<Option virtualFolder="CMake Files\CGL\deps\glfw\src\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glfw/src/glfw_config.h.in">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glfw/src/glfw_config.h.in">
 			<Option virtualFolder="CMake Files\CGL\deps\glfw\src\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/CMakeLists.txt">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/CGL/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CGL\src\"/>
 		</Unit>
-		<Unit filename="/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/src/CMakeLists.txt">
+		<Unit filename="/home/samz/Documents/School/Graphics/cs184final/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
 	</Project>

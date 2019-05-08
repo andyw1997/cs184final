@@ -4,19 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/base64.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/base64.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/color.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/color.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/complex.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/complex.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix3x3.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/matrix4x4.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdfont.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/osdfont.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/osdtext.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/quaternion.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/tinyxml2.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector2D.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector3D.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/vector4D.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o"
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/src/viewer.cpp" "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/base64.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/base64.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/color.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/color.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/complex.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/complex.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix3x3.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/matrix4x4.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/osdfont.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/osdfont.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/osdtext.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/quaternion.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/tinyxml2.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/vector2D.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/vector3D.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/vector4D.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o"
+  "/home/samz/Documents/School/Graphics/cs184final/CGL/src/viewer.cpp" "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -35,7 +35,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/DependInfo.cmake"
+  "/home/samz/Documents/School/Graphics/cs184final/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -6,5 +6,5 @@ C_FLAGS = -g   -w
 
 C_DEFINES = -DGLEW_STATIC
 
-C_INCLUDES = -I/home/samz/Documents/School/Graphics/p2-meshedit-JHGZhou/CGL/deps/glew/include 
+C_INCLUDES = -I/home/samz/Documents/School/Graphics/cs184final/CGL/deps/glew/include 
 
