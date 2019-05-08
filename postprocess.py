@@ -1,6 +1,6 @@
 def fix_points(points):
-    # for p in points:
-    #     kill_weird_triangles(p, points)
+    for p in points:
+        kill_weird_triangles(p, points)
     for p in points:
         fix_point(p, points)
 
@@ -46,11 +46,12 @@ def check_point_and_connect_closest_neighbors_from(a, b, points):
             closest_points = replace_if_smaller(closest_points, (sq_dist(a, neighbor), neighbor))
 
     # assert triangle_count <= 2, "Edge between {}, {} is part of {} triangles".format(a, b, triangle_count)
-    assert len(a.neighbors) >= 3, "Point {} only has {} neighbors".format(a, len(a.neighbors))
+    # assert len(a.neighbors) >= 3, "Point {} only has {} neighbors".format(a, len(a.neighbors))
     
     for i in range(2 - triangle_count):
         point = closest_points[i][1]
-        connect(b, point)
+        if point != None:
+            connect(b, point)
 
 def connect(a, b):
     a.neighbors.add(b.id)
