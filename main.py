@@ -240,3 +240,4 @@ if __name__ == '__main__':
 	checkManifolds(meshList)
 	writeMeshList(meshList, count, inputFile, outputFile)
 	print("Done Write")
+#10 , 30
