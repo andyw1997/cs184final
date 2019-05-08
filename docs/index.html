@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
     <title>
-        CS184 Final Project Proposal - Point Cloud to Mesh Reconstruction - HackMD
+        CS 184 Final Project - HackMD
     </title>
     <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
     <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
@@ -34,67 +34,9 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid comment-enabled" style="position: relative;"><p>Sam Zhou (26378726)<br>
-Wenyuan Ma (3033282345)<br>
-Andy Wang (26412547)</p><h1 class="highlight" id="CS184-Final-Project-Proposal---Point-Cloud-to-Mesh-Reconstruction"><a class="anchor hidden-xs" href="#CS184-Final-Project-Proposal---Point-Cloud-to-Mesh-Reconstruction" title="CS184-Final-Project-Proposal---Point-Cloud-to-Mesh-Reconstruction"><span class="octicon octicon-link"></span></a>CS184 Final Project Proposal - Point Cloud to Mesh Reconstruction</h1><h2 id="Summary"><a class="anchor hidden-xs" href="#Summary" title="Summary"><span class="octicon octicon-link"></span></a>Summary</h2><p>We will explore our own approaches to the problem of point cloud to mesh reconstruction and potentially compare it to the Ball-Pivoting algorithm described in <a href="https://lidarwidgets.com/samples/bpa_tvcg.pdf" target="_blank" rel="noopener">this</a> paper. Our goal is to compare a few different ideas of our own with the results of some algorithms which are already established to see if we can make any improvements at all. Our final deliverable will be an array of images showing the meshes from our algorithms next to the original mesh and the mesh from the research paper.</p><h2 id="Problem-Description"><a class="anchor hidden-xs" href="#Problem-Description" title="Problem-Description"><span class="octicon octicon-link"></span></a>Problem Description</h2><p>Given a point-cloud, construct a “watertight” mesh that is most accurate to the original mesh. In other words, given a set of points which are drawn from the vertices of an original mesh, make an algorithm to reconstruct the original mesh just from these points.</p><h2 id="Goals-and-Deliverables"><a class="anchor hidden-xs" href="#Goals-and-Deliverables" title="Goals-and-Deliverables"><span class="octicon octicon-link"></span></a>Goals and Deliverables</h2><h3 id="Plan-to-deliver0"><a class="anchor hidden-xs" href="#Plan-to-deliver0" title="Plan-to-deliver0"><span class="octicon octicon-link"></span></a>Plan to deliver</h3><p>Generate three different approaches to the same set of image data and compare the results.</p><h5 id="Accuracy"><a class="anchor hidden-xs" href="#Accuracy" title="Accuracy"><span class="octicon octicon-link"></span></a>Accuracy:</h5><p>Accuracy in this project will be based on a visual assessment of how close it looks to the original mesh that we drew the point-cloud from.</p><h5 id="Performance"><a class="anchor hidden-xs" href="#Performance" title="Performance"><span class="octicon octicon-link"></span></a>Performance:</h5><p>We will measure performance based on the total rendering time for a few large meshes, such as the dragon and the armadillo.</p><h4 id="Pictures"><a class="anchor hidden-xs" href="#Pictures" title="Pictures"><span class="octicon octicon-link"></span></a>Pictures</h4><p>The final rendered pictures we seek to obtain from this will be each algorithm run on the point cloud for a couple simple meshes, such as the teapot and sphere, as well as a few large meshes, such as the dragon and armadillo.</p><h3 id="Hope-to-deliver"><a class="anchor hidden-xs" href="#Hope-to-deliver" title="Hope-to-deliver"><span class="octicon octicon-link"></span></a>Hope to deliver</h3><p>To implement the Ball-Pivoting Algorithm and compare the result with the three of our own approaches. If time allows, we can make an interactive mesh-rendering debugger, to show how the mesh is rendered step-by-step in real-time.</p><h3 id="Some-Pseudocode-for-Our-Algorithms"><a class="anchor hidden-xs" href="#Some-Pseudocode-for-Our-Algorithms" title="Some-Pseudocode-for-Our-Algorithms"><span class="octicon octicon-link"></span></a>Some Pseudocode for Our Algorithms</h3><p>Here are some preliminary ideas for some rather naive algorithms and some quick pseudocode to describe them</p><h4 id="Nearest-Points--Radius-Sampling"><a class="anchor hidden-xs" href="#Nearest-Points--Radius-Sampling" title="Nearest-Points--Radius-Sampling"><span class="octicon octicon-link"></span></a>Nearest Points / Radius Sampling</h4><pre><code>For each point in cloud:
-    radius = an initial value
-    
-    set_of_points_in_radius 
-    for all points:
-        if dis(point, starting_point):
-            add point to set_of_points_in_radius
-
-    if (sizeof(set_of_points_in_radius) &lt; 3):
-        increase the radius and try again
-    else:
-        for all points in set_of_points_in_radius:
-            connect to the starting_point
-    
-
-for any points which are within some range of the average distance of the 
-    connected points, connect those points too, to make the cutoff for the 
-
-    algorithm non-strict
-    
-Finally, fix any "gaps" in the mesh, such as any non-triangular holes.
-</code></pre><p>We are planning to tune the value of the initial radius and find an optimized value to use for the final result.</p><h4 id="Directional-Selection-of-nearest-points-based-on-normals"><a class="anchor hidden-xs" href="#Directional-Selection-of-nearest-points-based-on-normals" title="Directional-Selection-of-nearest-points-based-on-normals"><span class="octicon octicon-link"></span></a>Directional Selection of nearest points based on normals:</h4><pre><code>For each point in cloud:
-    normal direction = average normal for directions of x surrounding points
-    
-    Get some number of points close to the point
-        in some way such that the points are well-distributed "directionally" 
-        about the normal direction, ie. not all on one side of the point.
-    
-    Connect the point to those points
-    
-Finally, fix any "gaps" in the mesh, such as any non-triangular holes.
-</code></pre><h4 id="Minimum-Spanning-Mesh-Because-Inspired-by-Prim’s"><a class="anchor hidden-xs" href="#Minimum-Spanning-Mesh-Because-Inspired-by-Prim’s" title="Minimum-Spanning-Mesh-Because-Inspired-by-Prim’s"><span class="octicon octicon-link"></span></a>Minimum Spanning Mesh (Because Inspired by Prim’s)</h4><pre><code>MSM(PointSet p):
-    Start mesh with a random seed triangle
-    Add 3 points of seed triangle to inMeshSet
-    while inMeshSet.size &lt; p.size:
-        V = point in {p\inMeshSet} that is closest to any point in inMeshSet
-        Connect V to two points closest to it in inMeshSet
-            and construct appropriate triangles (at most 2)
-        Connect V to any point which is alpha * d away from V in inMeshSet 
-            where alpha is a parameter &gt;= 1 and d is the distance from V to 
-            the farther of the points it just connected to
-        Add V to inMeshSet
-        
-</code></pre><p>For this algorithm, we will test multip see what performs best.</p><h3 id="Plan-to-deliver"><a class="anchor hidden-xs" href="#Plan-to-deliver" title="Plan-to-deliver"><span class="octicon octicon-link"></span></a>Plan to deliver</h3><p>Generate three different approaches to the same set of image data and compare the results.</p><h5 id="Accuracy1"><a class="anchor hidden-xs" href="#Accuracy1" title="Accuracy1"><span class="octicon octicon-link"></span></a>Accuracy:</h5><p>Accuracy in this project will be based on a visual assessment of how close it looks to the original mesh that we drew the point-cloud from.</p><h5 id="Performance1"><a class="anchor hidden-xs" href="#Performance1" title="Performance1"><span class="octicon octicon-link"></span></a>Performance:</h5><p>We will measure performance based on the total rendering time for a few large meshes, such as the dragon and the armadillo.</p><h4 id="Pictures1"><a class="anchor hidden-xs" href="#Pictures1" title="Pictures1"><span class="octicon octicon-link"></span></a>Pictures</h4><p>The final rendered pictures we seek to obtain from this will be each algorithm run on the point cloud for a couple simple meshes, such as the teapot and sphere, as well as a few large meshes, such as the dragon and armadillo.</p><h3 id="Hope-to-deliver1"><a class="anchor hidden-xs" href="#Hope-to-deliver1" title="Hope-to-deliver1"><span class="octicon octicon-link"></span></a>Hope to deliver</h3><p>To implement the Ball-Pivoting Algorithm and compare the result with the three of our own approaches. If time allows, we can make an interactive mesh-rendering debugger, to show how the mesh is rendered step-by-step in real-time.</p><h2 id="Schedule"><a class="anchor hidden-xs" href="#Schedule" title="Schedule"><span class="octicon octicon-link"></span></a>Schedule</h2><h4 id="Week-1-April-8---14"><a class="anchor hidden-xs" href="#Week-1-April-8---14" title="Week-1-April-8---14"><span class="octicon octicon-link"></span></a>Week 1 April 8 - 14</h4><ol>
-<li>Psedudocode for all of our own approaches.</li>
-<li>Understand Ball-Pivoting, estimate how long it will take to implement, and decide to implement it or not at the end.</li>
-</ol><h4 id="Week-2-April-15---21"><a class="anchor hidden-xs" href="#Week-2-April-15---21" title="Week-2-April-15---21"><span class="octicon octicon-link"></span></a>Week 2 April 15 - 21</h4><ol>
-<li>Implement all three of the approaches. (Each person implements one.)</li>
-</ol><h4 id="Week-3-April-22---28"><a class="anchor hidden-xs" href="#Week-3-April-22---28" title="Week-3-April-22---28"><span class="octicon octicon-link"></span></a>Week 3 April 22 - 28</h4><ol>
-<li>Buffer time to finish all the approaches.</li>
-<li>Implement the interactive mesh-rendering debugger, if we all finish on time (Week 2).</li>
-</ol><h4 id="Week-4-April-29---05"><a class="anchor hidden-xs" href="#Week-4-April-29---05" title="Week-4-April-29---05"><span class="octicon octicon-link"></span></a>Week 4 April 29 - 05</h4><ol>
-<li>Implement Ball-Pivoting, if we finish all other approaches early.</li>
-<li>Finish the write-up and make the video to show our final mesh images and comparisons.</li>
-</ol><h2 id="Resources"><a class="anchor hidden-xs" href="#Resources" title="Resources"><span class="octicon octicon-link"></span></a>Resources</h2><ol>
-<li>Stanford meshes from which we create our input point-cloud data.</li>
-<li>“The Ball-Pivoting Algorithm for Surface Reconstruction” <a href="https://lidarwidgets.com/samples/bpa_tvcg.pdf" target="_blank" rel="noopener">https://lidarwidgets.com/samples/bpa_tvcg.pdf</a></li>
-<li>CS184 Course staff made rendering program for meshes (Assignment 2)</li>
-</ol><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 768px; height: 3862px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" style="position: relative;"><h1 id="CS-184-Final-Project"><a class="anchor hidden-xs" href="#CS-184-Final-Project" title="CS-184-Final-Project"><span class="octicon octicon-link"></span></a>CS 184 Final Project</h1><h2 id="Checkpoint-04302019"><a class="anchor hidden-xs" href="#Checkpoint-04302019" title="Checkpoint-04302019"><span class="octicon octicon-link"></span></a>Checkpoint 04/30/2019</h2><h4 id="Wenyuan-Ma-Andy-Wang-Sam-Zhou"><a class="anchor hidden-xs" href="#Wenyuan-Ma-Andy-Wang-Sam-Zhou" title="Wenyuan-Ma-Andy-Wang-Sam-Zhou"><span class="octicon octicon-link"></span></a>Wenyuan Ma, Andy Wang, Sam Zhou</h4><h3 id="Accomplishments"><a class="anchor hidden-xs" href="#Accomplishments" title="Accomplishments"><span class="octicon octicon-link"></span></a>Accomplishments</h3><p>So far we have finished preprocessing and post-processing scaffolding.</p><p>In preprocessing, we read all the points and normals from a .dae file and put them into a list.<br>
+In post-processing, we take a graph of points to neighboring points with which<br>
+they have an edge, and reconstruct the mesh back into a .dae file which can be rendered with project 2.</p><p><a href="https://docs.google.com/presentation/d/16qYt_aKLdlgjSNKGlA9Lt3bG1tocqRldoNZev8-V8kk/edit?usp=sharing" target="_blank" rel="noopener">Interesting parts of postprocessing can be seen in the slides</a></p><p><a href="https://drive.google.com/file/d/14bDZOMfV9J4UmoeWStGNTFRaijLYL8Rb/view" target="_blank" rel="noopener">Demonstration can be seen in the video</a></p><h3 id="Preliminary-Results"><a class="anchor hidden-xs" href="#Preliminary-Results" title="Preliminary-Results"><span class="octicon octicon-link"></span></a>Preliminary Results</h3><p>To show some results, we chained together preprocessing and post-processing, while filling in the graph edges just by reading from the original dae file.</p><p>After adding in the somewhat complex BFS-based triangle construction method, as well as the extraneous triangle removal, the results are as needed: we can completely reconstruct the original mesh with just a graph of the vertices and edges.</p><p>This means that the only step left to be able to go from point cloud to full mesh is the algorithm to construct the graph out of the point cloud.</p><h3 id="Reflection-on-progress"><a class="anchor hidden-xs" href="#Reflection-on-progress" title="Reflection-on-progress"><span class="octicon octicon-link"></span></a>Reflection on progress</h3><p>The post-processing was more nuanced than we expected. At the beginning, we thought we could just loop through all the vertices and construct all the triangles for each vertex. But we realized after trying it out that there are some non-existent triangles from the overloaded edges, as well as many problems dealing with the directions of the triangles. These challenges are further explained in the above link to the slides.</p><p>Now after we have solved this pre and post processing part, we are at a point where we have an input set of points and normals, as well as a place we can output a graph and directly get a correct .dae file. The only remaining part is to implement the algorithms which, given a set of points in 3d space, can construct a neighbors graph.</p><h3 id="Updated-work-plan"><a class="anchor hidden-xs" href="#Updated-work-plan" title="Updated-work-plan"><span class="octicon octicon-link"></span></a>Updated work plan</h3><p>From here, we only need to implement the algorithms. We have 4 that we are aiming to implement that we describe in the project proposal: 3 of our own, and the ball-point as a reference implementation.</p></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
@@ -102,19 +44,14 @@ Finally, fix any "gaps" in the mesh, such as any non-triangular holes.
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc"><ul class="nav">
-<li class=""><a href="#CS184-Final-Project-Proposal---Point-Cloud-to-Mesh-Reconstruction" title="CS184 Final Project Proposal - Point Cloud to Mesh Reconstruction">CS184 Final Project Proposal - Point Cloud to Mesh Reconstruction</a><ul class="nav">
-<li><a href="#Summary" title="Summary">Summary</a></li>
-<li><a href="#Problem-Description" title="Problem Description">Problem Description</a></li>
-<li><a href="#Goals-and-Deliverables" title="Goals and Deliverables">Goals and Deliverables</a><ul class="nav">
-<li><a href="#Plan-to-deliver0" title="Plan to deliver">Plan to deliver</a></li>
-<li><a href="#Hope-to-deliver" title="Hope to deliver">Hope to deliver</a></li>
-<li><a href="#Some-Pseudocode-for-Our-Algorithms" title="Some Pseudocode for Our Algorithms">Some Pseudocode for Our Algorithms</a></li>
-<li><a href="#Plan-to-deliver" title="Plan to deliver">Plan to deliver</a></li>
-<li><a href="#Hope-to-deliver1" title="Hope to deliver">Hope to deliver</a></li>
+<li class=""><a href="#CS-184-Final-Project" title="CS 184 Final Project">CS 184 Final Project</a><ul class="nav">
+<li><a href="#Checkpoint-04302019" title="Checkpoint 04/30/2019">Checkpoint 04/30/2019</a><ul class="nav">
+<li><a href="#Accomplishments" title="Accomplishments">Accomplishments</a></li>
+<li><a href="#Preliminary-Results" title="Preliminary Results">Preliminary Results</a></li>
+<li><a href="#Reflection-on-progress" title="Reflection on progress">Reflection on progress</a></li>
+<li><a href="#Updated-work-plan" title="Updated work plan">Updated work plan</a></li>
 </ul>
 </li>
-<li><a href="#Schedule" title="Schedule">Schedule</a></li>
-<li><a href="#Resources" title="Resources">Resources</a></li>
 </ul>
 </li>
 </ul>
@@ -124,19 +61,14 @@ Finally, fix any "gaps" in the mesh, such as any non-triangular holes.
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
         <div class="toc"><ul class="nav">
-<li class=""><a href="#CS184-Final-Project-Proposal---Point-Cloud-to-Mesh-Reconstruction" title="CS184 Final Project Proposal - Point Cloud to Mesh Reconstruction">CS184 Final Project Proposal - Point Cloud to Mesh Reconstruction</a><ul class="nav">
-<li><a href="#Summary" title="Summary">Summary</a></li>
-<li><a href="#Problem-Description" title="Problem Description">Problem Description</a></li>
-<li><a href="#Goals-and-Deliverables" title="Goals and Deliverables">Goals and Deliverables</a><ul class="nav">
-<li><a href="#Plan-to-deliver0" title="Plan to deliver">Plan to deliver</a></li>
-<li><a href="#Hope-to-deliver" title="Hope to deliver">Hope to deliver</a></li>
-<li><a href="#Some-Pseudocode-for-Our-Algorithms" title="Some Pseudocode for Our Algorithms">Some Pseudocode for Our Algorithms</a></li>
-<li><a href="#Plan-to-deliver" title="Plan to deliver">Plan to deliver</a></li>
-<li><a href="#Hope-to-deliver1" title="Hope to deliver">Hope to deliver</a></li>
+<li class=""><a href="#CS-184-Final-Project" title="CS 184 Final Project">CS 184 Final Project</a><ul class="nav">
+<li><a href="#Checkpoint-04302019" title="Checkpoint 04/30/2019">Checkpoint 04/30/2019</a><ul class="nav">
+<li><a href="#Accomplishments" title="Accomplishments">Accomplishments</a></li>
+<li><a href="#Preliminary-Results" title="Preliminary Results">Preliminary Results</a></li>
+<li><a href="#Reflection-on-progress" title="Reflection on progress">Reflection on progress</a></li>
+<li><a href="#Updated-work-plan" title="Updated work plan">Updated work plan</a></li>
 </ul>
 </li>
-<li><a href="#Schedule" title="Schedule">Schedule</a></li>
-<li><a href="#Resources" title="Resources">Resources</a></li>
 </ul>
 </li>
 </ul>
