@@ -2,6 +2,7 @@ import sys
 import random
 import prims
 import postprocess
+import wenyuan
 
 class Point:
 	def __init__(self, x, y, z, num):
@@ -9,11 +10,16 @@ class Point:
 		self.pos = (x, y, z)
 		self.neighbors = set([])
 	def __eq__(self, other):
-		return self.id == other.id
+		return other != None and self.id == other.id
 	def __lt__(self, other):
 		return self.id < other.id
 	def __hash__(self):
 		return hash(self.pos)
+	def addNeighbor(self, other):
+		self.neighbors.add(other.id)
+		other.neighbors.add(self.id)
+	def hasNeighbor(self, other):
+		return self.id in other.neighbors and other.id in self.neighbors
 
 def read_dae(filename):
 	points = []
@@ -96,11 +102,11 @@ def genMeshList(pointMap):
 				mistakeEdges.add((p3, p1))
 		
 			meshList.append(p1)
-			meshList.append(p1)
+			meshList.append(1)
 			meshList.append(p2)
-			meshList.append(p2)
+			meshList.append(2)
 			meshList.append(p3)
-			meshList.append(p3)
+			meshList.append(3)
 			edges.add((p1, p2))
 			edges.add((p2, p3))
 			edges.add((p3, p1))
@@ -115,8 +121,8 @@ def genMeshList(pointMap):
 			if (p1, p3) not in edges and (p1, p3) not in queue:
 				queue.append((p1, p3))
 			
-	meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
-	return meshList, count - subCount
+	# meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
+	return meshList, count
 
 def fixMistakes(meshList, triangles, mistakes):
 	badTriangles = set([])
@@ -233,8 +239,9 @@ if __name__ == '__main__':
 
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
-	prims.runPrims(pointMap, coordMap, 4, 8)
-	postprocess.fix_points(pointMap)
+	# prims.runPrims(pointMap, coordMap, 4, 8)
+	wenyuan.create_mesh(pointMap)
+	# postprocess.fix_points(pointMap)
 	#createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
@@ -242,4 +249,3 @@ if __name__ == '__main__':
 	checkManifolds(meshList)
 	writeMeshList(meshList, count, inputFile, outputFile)
 	print("Done Write")
-#10 , 30
