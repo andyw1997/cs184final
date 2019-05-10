@@ -111,11 +111,16 @@ def process_closest_point(points, edge, point_id, pending_edges, visited_edges):
 	points[edge.a].addNeighbor(points[point_id])
 	points[edge.b].addNeighbor(points[point_id])
 
-	direction = find_direction(points, edge.a, point_id, edge.b)
-	new_edge_1 = Edge(point_id, edge.a, edge.b, direction)
+	direction = find_direction(points, edge.a, edge.b, point_id)
 
-	if (new_edge_1.angle_between(edge) < (np.pi / 180) * 90):
-		return None
+	edge_other = Edge(edge.a, edge.b, point_id, direction)
+
+	# if (edge_other.angle_between(edge) < (np.pi / 180) * 130):
+	# 	return None
+
+	direction = find_direction(points, edge.a, point_id, edge.b)
+
+	new_edge_1 = Edge(point_id, edge.a, edge.b, direction)
 
 	if new_edge_1 not in pending_edges and new_edge_1 not in visited_edges:
 		# print("add edge 1")
@@ -163,9 +168,8 @@ def process_next_edge(points, pending_edges, visited_edges):
 def create_mesh(points):
 	pending_edges = find_first_triangle_edges(points)
 	visited_edges = set([])
-	# print(len(points))
 
-	while pending_edges and len(pending_edges) < 3000:
+	while pending_edges:
 		pending_edges, visited_edges = process_next_edge(points, pending_edges, visited_edges)
 		print("length of pending_edges: ", len(pending_edges))
 		print("length of visited_edges: ", len(visited_edges))
