@@ -1,6 +1,7 @@
 import sys
 import random
 import prims
+import closest_points
 import postprocess
 import wenyuan
 
@@ -239,12 +240,13 @@ if __name__ == '__main__':
 
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
+	# closest_points.connect_closest(pointMap, coordMap, 6, 0.2)
 	wenyuan.create_mesh(pointMap)
 	# prims.runPrims(pointMap, coordMap, 10, 100)
 	#createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
 	print("Done Gen Mesh List")
-	checkManifolds(meshList)
+	#checkManifolds(meshList)
 	writeMeshList(meshList, count, inputFile, outputFile)
 	print("Done Write")
