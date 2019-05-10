@@ -121,7 +121,7 @@ def genMeshList(pointMap):
 			if (p1, p3) not in edges and (p1, p3) not in queue:
 				queue.append((p1, p3))
 			
-	# meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
+	#meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
 	return meshList, count
 
 def fixMistakes(meshList, triangles, mistakes):
@@ -239,9 +239,8 @@ if __name__ == '__main__':
 
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
-	# prims.runPrims(pointMap, coordMap, 4, 8)
 	wenyuan.create_mesh(pointMap)
-	# postprocess.fix_points(pointMap)
+	# prims.runPrims(pointMap, coordMap, 10, 100)
 	#createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
