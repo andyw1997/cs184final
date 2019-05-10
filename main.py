@@ -1,6 +1,7 @@
 import sys
 import random
 import prims
+import closest_points
 import postprocess
 
 class Point:
@@ -115,8 +116,8 @@ def genMeshList(pointMap):
 			if (p1, p3) not in edges and (p1, p3) not in queue:
 				queue.append((p1, p3))
 			
-	meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
-	return meshList, count - subCount
+	#meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
+	return meshList, count# - subCount
 
 def fixMistakes(meshList, triangles, mistakes):
 	badTriangles = set([])
@@ -233,12 +234,13 @@ if __name__ == '__main__':
 
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
-	prims.runPrims(pointMap, coordMap, 4, 8)
-	postprocess.fix_points(pointMap)
+	# prims.runPrims(pointMap, coordMap, 4, 8)
+	closest_points.connect_closest(pointMap, coordMap, 6, 0.2)
+	#postprocess.fix_points(pointMap)
 	#createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
 	print("Done Gen Mesh List")
-	checkManifolds(meshList)
+	#checkManifolds(meshList)
 	writeMeshList(meshList, count, inputFile, outputFile)
 	print("Done Write")

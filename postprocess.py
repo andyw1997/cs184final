@@ -1,6 +1,6 @@
 def fix_points(points):
-    for p in points:
-        kill_weird_triangles(p, points)
+    # for p in points:
+    #     kill_weird_triangles(p, points)
     for p in points:
         fix_point(p, points)
 
