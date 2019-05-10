@@ -1,6 +1,7 @@
 import sys
 import random
 import prims
+import postprocess
 
 class Point:
 	def __init__(self, x, y, z, num):
