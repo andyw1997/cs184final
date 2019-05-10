@@ -12,7 +12,7 @@ def runPrims(points, coords, countLim, nearestLim):
 	
 	edges = 0
 	while len(queue) > 0:
-		
+		print(len(queue))
 		v = pq.heappop(queue)[1]
 		if v in inMST:
 			continue
@@ -33,7 +33,7 @@ def runPrims(points, coords, countLim, nearestLim):
 			else:
 				pq.heappush(queue, (dist, point))
 		inMST.add(v)
-	print(edges)
+	print("points", len(points))
 	
 def seedQueue(queue, tree, points, coords, inMST, inQueue, allCoords):
 	first = points[0]

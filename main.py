@@ -3,6 +3,7 @@ import random
 import prims
 import closest_points
 import postprocess
+import wenyuan
 
 class Point:
 	def __init__(self, x, y, z, num):
@@ -10,11 +11,16 @@ class Point:
 		self.pos = (x, y, z)
 		self.neighbors = set([])
 	def __eq__(self, other):
-		return self.id == other.id
+		return other != None and self.id == other.id
 	def __lt__(self, other):
 		return self.id < other.id
 	def __hash__(self):
 		return hash(self.pos)
+	def addNeighbor(self, other):
+		self.neighbors.add(other.id)
+		other.neighbors.add(self.id)
+	def hasNeighbor(self, other):
+		return self.id in other.neighbors and other.id in self.neighbors
 
 def read_dae(filename):
 	points = []
@@ -97,11 +103,11 @@ def genMeshList(pointMap):
 				mistakeEdges.add((p3, p1))
 		
 			meshList.append(p1)
-			meshList.append(p1)
+			meshList.append(1)
 			meshList.append(p2)
-			meshList.append(p2)
+			meshList.append(2)
 			meshList.append(p3)
-			meshList.append(p3)
+			meshList.append(3)
 			edges.add((p1, p2))
 			edges.add((p2, p3))
 			edges.add((p3, p1))
@@ -117,7 +123,7 @@ def genMeshList(pointMap):
 				queue.append((p1, p3))
 			
 	#meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
-	return meshList, count# - subCount
+	return meshList, count
 
 def fixMistakes(meshList, triangles, mistakes):
 	badTriangles = set([])
@@ -234,9 +240,9 @@ if __name__ == '__main__':
 
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
-	# prims.runPrims(pointMap, coordMap, 4, 8)
-	closest_points.connect_closest(pointMap, coordMap, 6, 0.2)
-	#postprocess.fix_points(pointMap)
+	# closest_points.connect_closest(pointMap, coordMap, 6, 0.2)
+	wenyuan.create_mesh(pointMap)
+	# prims.runPrims(pointMap, coordMap, 10, 100)
 	#createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
