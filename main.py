@@ -123,7 +123,7 @@ def genMeshList(pointMap):
 				queue.append((p1, p3))
 			
 	#meshList, subCount = fixMistakes(meshList, triangles, mistakeEdges)
-	return meshList, count
+	return meshList, count# - subCount
 
 def fixMistakes(meshList, triangles, mistakes):
 	badTriangles = set([])
@@ -240,10 +240,11 @@ if __name__ == '__main__':
 
 	pointMap, coordMap = read_dae(inputFile)
 	print("Done Read Dae")
-	# closest_points.connect_closest(pointMap, coordMap, 6, 0.2)
-	wenyuan.create_mesh(pointMap)
+	closest_points.connect_closest(pointMap, coordMap, 5, 0.2)
+	postprocess.fix_points(pointMap)
+	# wenyuan.create_mesh(pointMap)
 	# prims.runPrims(pointMap, coordMap, 10, 100)
-	#createGraph(pointMap, inputFile)
+	# createGraph(pointMap, inputFile)
 	print("Done Create Graph")
 	meshList, count = genMeshList(pointMap)
 	print("Done Gen Mesh List")

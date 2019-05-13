@@ -114,7 +114,7 @@ def process_closest_point(points, edge, point_id, pending_edges, visited_edges):
 	direction = find_direction(points, edge.a, point_id, edge.b)
 	new_edge_1 = Edge(point_id, edge.a, edge.b, direction)
 
-	if (new_edge_1.angle_between(edge) < (np.pi / 180) * 90):
+	if (new_edge_1.angle_between(edge) < (np.pi / 180) * 60):
 		return None
 
 	if new_edge_1 not in pending_edges and new_edge_1 not in visited_edges:
